@@ -1,112 +1,383 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <title>Клиники Реавиз</title>
-        <link rel="stylesheet" href="main.min.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__toolbar">
-                <div class="top-toolbar">
-                    <div class="top-toolbar__university-link">
-                        <a href="#" class="university-link" target="_blank">Сайт университета</a>
-                    </div>
-                    <div class="top-toolbar__accessibility">
-                        <div class="accessibility">
-                            <div class="accessibility__item">
-                                <img src="" alt="">
-                            </div>
-                            <div class="accessibility__item">
-                                <img src="" alt="">
-                            </div>
-                            <div class="accessibility__item">
-                                <img src="" alt="">
-                            </div>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Клиники Реавиз</title>
+    <link rel="stylesheet" href="main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__toolbar">
+            <div class="top-toolbar">
+                <div class="top-toolbar__university-link">
+                    <a href="#" class="university-link" target="_blank">Сайт университета</a>
+                </div>
+                <div class="top-toolbar__accessibility">
+                    <div class="accessibility">
+                        <div class="accessibility__item accessibility__item_map">
+                            <img src="img/map-btn.png" class="accessibility__img">
                         </div>
-                    </div>
-                    <div class="top-toolbar__social">
-                        <div class="social">
-                            <ul class="social__list">
-                                <li class="social__item"><a class="social__link social__link_vk" href="#">vk</a></li>
-                                <li class="social__item"><a class="social__link social__link_tw" href="#">tw</a></li>
-                                <li class="social__item"><a class="social__link social__link_fb" href="#">fb</a></li>
-                                <li class="social__item"><a class="social__link social__link_ok" href="#">ok</a></li>
-                            </ul>
+                        <div class="accessibility__item accessibility__item_search">
+                            <img src="img/search-btn.png" class="accessibility__img">
+                        </div>
+                        <div class="accessibility__item accessibility__item_blind">
+                            <img src="img/blind-btn.png" class="accessibility__img">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__info">
-                <div class="header-info">
-                    <div class="header-info__logo">
-                        <div class="logo">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div class="header-info__phone">
-                        <div class="phone">
-                        </div>
-                    </div>
-                    <div class="header-info__actions">
-                        <button class="header-info__button">Заказать звонок</button>
-                        <button class="header-info__button">Запись на прием</button>
+                <div class="top-toolbar__social">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img src="img/vk-logo.png" class="social__logo social__logo_header" alt="vk">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img src="img/tw-logo.png" class="social__logo social__logo_header" alt="twtter">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img src="img/fb-logo.png" class="social__logo social__logo_header" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img src="img/ok-logo.png" class="social__logo social__logo_header" alt="ok">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="header-menu">
-                <nav class="header-menu">
-                    <ul class="header-menu__list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Пациентам</a></li>
-                        <li><a href="#">Услуги и цены</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">Партнерам</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>    
-                </nav>
+        </div>
+        <div class="header__info">
+            <div class="header-info">
+                <div class="header-info__logo">
+                    <div class="logo logo_header">
+                        <div class="logo__img">
+                            <img src="img/logo-small.png" alt="logo">
+                        </div>
+                        <div class="logo__name">
+                            <p class="logo__text_accent">Клиники Реавиз</p>
+                            <p class="logo__text_small">медицинского университета</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-info__phone">
+                    <div class="phone">
+                        <div class="phone__title">Многоканальный</div>
+                        <div class="phone__number">
+                            <img src="img/phone-icon.png" alt="phone">
+                            <a href="tel:88463212121" class="phone__link">8 846 321-21-21</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-info__actions">
+                    <button class="header-info__button">Заказать звонок</button>
+                    <button class="header-info__button">Запись на прием</button>
+                </div>
             </div>
-        </header>
-        <nav class="breadcrumb">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Медицинским организациям</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class="main-content">
-                <aside class="main-content__column">
-                    
-                </aside>
-                <section class="main-content__column">
-    
-                </section>
+        </div>
+        <div class="header__menu">
+            <nav class="header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">
+                            О нас
+                            <img class="header-menu__arrow-icon" src="img/arrow-down.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">
+                            Пациентам
+                            <img class="header-menu__arrow-icon" src="img/arrow-down.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">
+                            Услуги и цены
+                            <img class="header-menu__arrow-icon" src="img/arrow-down.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Расписание</a></li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">
+                            Партнерам
+                            <img class="header-menu__arrow-icon" src="img/arrow-down.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="main-content">
+            <aside class="main-content__left-column">
+                <div class="left-menu">
+                    <div class="left-menu__current-section">
+                        <div class="current-section__title">Контакты</div>
+                        <div class="current-section__button">-</div>
+                    </div>
+                    <ul class="left-menu__list">
+                        <li class="left-menu__item">
+                            <a href="#" class="left-menu__link">Многопрофильная клиника</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a href="#" class="left-menu__link">Стоматологическая клиника</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a href="#" class="left-menu__link">Отделение медицинском экспертизы</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a href="#" class="left-menu__link">Аптеки</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="main-content__right-column">
+                <div class="content">
+                    <h1 class="content__title">Контакты</h1>
+                    <iframe class="content__map" src="https://yandex.ru/map-widget/v1/-/CBeg60TFHB"></iframe>
+                    <div class="content__address">
+                        <div class="content__address-title">Адрес</div>
+                        <div class="content__address-text">
+                            Самара, ул. Советской Армии, дом 243 А </br>
+                            Телефон регистратуры: 8 (846) 321-21-21
+                        </div>
+                    </div>
+                    <div class="content__schedule">
+                        <div class="content__schedule-title">Режим работы</div>
+                        <div class="content__schedule-text">
+                            ПН-ПТ 10:00 - 20:00 </br>
+                            СБ-ВС 9:00 - 20:00
+                        </div>
+                    </div>
+                    <div class="content__transport">
+                        <div class="content__transport-title">Как доехать</div>
+                        <div class="content__transport-text">
+                            Автобусы № 50, 60, 61 </br>
+                            Трамваи № 20, 20К, 22 </br>
+                            Маршрутные такси № 206, 261, 50, 61Д, 297, 97 </br>
+                            Ехать до остановки "Кинотеатр Современник". Многопрофильная клиника "Реавиз" находится рядом с санаториями
+                        </div>
+                    </div>
+                </div>
             </section>
-        </main>
-        <section class="consultation">
+        </section>
+    </main>
+    <section class="consultation">
+        <div class="consultation__container">
             <div class="consultation__title">Хочешь консультацию врача - бесплатно?</div>
             <div class="consultation__subscription">
-                
+                <p class="consultation__subscription-text">
+                    Подпишись на рассылку новостей Клиник Реавиз и информации о наших мероприятиях и приходи на первую консультацию бесплатно!
+                </p>
+                <div class="consultation__subscription-agree">
+                    <input type="checkbox">
+                    <p>
+                        Я даю согласие на обработку персональных данных, согласен на получение информационных рассылок от Медицинских клиник "Реавиз"
+                        и соглашаюсь с <a href="#">политикой конфиденциальности</a>.
+                    </p>
+                </div>
             </div>
             <form class="consultation__form">
                 <input type="e-mail" class="consultation__input" placeholder="Введите e-mail">
                 <button class="consultation__button">Подписаться на рассылку</button>
             </form>
-        </section>
-        <footer class="footer">
-            <div class="footer__row">
-                <div class="footer__logo"></div>
-                <div class="footer__menu"></div>
-                <div class="footer__contacts"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__row footer__row_info">
+            <div class="footer__logo">
+                <div class="logo logo_footer">
+                    <div class="logo__img">
+                        <img src="img/logo-big.png" alt="logo">
+                    </div>
+                    <div class="logo__name">
+                        <p class="logo__text_accent">Клиники Реавиз</p>
+                        <p class="logo__text_small">медицинского университета</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer__row">
+            <div class="footer__menu">
+                <div class="footer-menu footer-menu_three-column">
+                    <div class="footer-menu__column">
+                        <div class="footer-menu__section">
+                            <a href="#">О нас</a>
+                        </div>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Новости</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Мероприятия</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Отзывы</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Статьи</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Вакансии</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu__column">
+                        <div class="footer-menu__section">
+                            <a href="#">Пациентам</a>
+                        </div>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Лечение по ОМС</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Лечение по ДМС</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Иногородним пациентам</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Памятки пациентам</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu__column">
+                        <div class="footer-menu__section">
+                            <a href="#">Услуги и цены</a>
+                        </div>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Акции</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Программы</a>
+                            </li>
+                        </ul>
+                        <div class="footer-menu__section">
+                            <a href="#">Врачи</a>
+                        </div>
+                        <div class="footer-menu__section">
+                            <a href="#">Расписание</a>
+                        </div>
+                        <div class="footer-menu__section">
+                            <a href="#">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu footer-menu_one-column">
+                    <div class="footer-menu__section">
+                        <a href="#">Партнерам</a>
+                    </div>
+                    <div class="footer-menu__list-columns">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Медицинским организациям</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Страховым компаниям</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Предприятиям</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Сведения о медицинской организации</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Соглашение об обработке персональных данных</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">Соглашение о конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <div class="phone">
+                    <div class="phone__number">
+                        <img src="img/phone-icon.png" alt="phone">
+                        <a href="tel:88463212121" class="phone__link">8 846 321-21-21</a>
+                    </div>
+                    <div class="phone__title">Многоканальный</div>
+                </div>
+                <div class="footer-action">
+                    <button class="footer-action__button">Заказать звонок</button>
+                </div>
+
+                <div class="address">
+                    443011, г. Самара,</br>
+                    ул. Советской Армии, 243
+                </div>
+
+                <div class="schedule">
+                    <p class="schedule__text">
+                        Режим работы многопрофильной клиники в <span class="_underline">будни:</span>
+                    </p>
+                    <div class="schedule__time">
+                        <img src="img/clock-icon.png" alt="">
+                        <p>8.00 - 20.00</p>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="img/vk-logo.png" class="social__logo social__logo_header" alt="vk">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="img/tw-logo.png" class="social__logo social__logo_header" alt="twtter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="img/fb-logo.png" class="social__logo social__logo_header" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="img/ok-logo.png" class="social__logo social__logo_header" alt="ok">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__row footer__row_copyright">
+            <div class="footer__copyright-container">
                 <div class="footer__copyright">
                     &copy; 1996-2007 Клиники медицинского университета "РЕАВИЗ"
                 </div>
                 <div class="footer__developer">
-                    <img src="" alt="taurus team">
+                    <img src="img/dev-logo.png" alt="taurus team">
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>

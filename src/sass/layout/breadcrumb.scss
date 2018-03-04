@@ -1,0 +1,23 @@
+.breadcrumb {
+    &__list {
+        display: flex;
+        margin: 25px auto;
+        width: $desktop-content-width;
+    }
+    &__item:not(:first-child) {
+        margin-left: 7px;
+    }
+    &__item:not(:last-child)::after {
+        content: '/';
+    }
+    &__link {
+        @extend .roboto-regular;
+        font-size: 12px;
+        color: $violet-gray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

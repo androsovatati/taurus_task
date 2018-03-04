@@ -1,0 +1,168 @@
+.header {
+    &__toolbar {
+        background: $top-toolbar-bg;
+    }
+    &__menu {
+        background: $main-menu-bg;
+    }
+}
+
+.top-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 6px 0;
+    width: $desktop-content-width;
+
+    &__accessibility {
+        margin-left: auto;
+        margin-right: 130px;
+    }
+
+}
+
+.university-link {
+    @extend .roboto-medium;
+    font-size: 13px;
+    color: $primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.accessibility {
+    display: flex;
+
+    &__item {
+        height: 30px;
+        cursor: pointer;
+
+        &_search {
+            padding-left: 35px;
+        }
+        &_blind {
+            padding-left: 27px;
+        }
+    }
+
+    &__img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.social {
+    &__item {
+        float: left;
+
+        &:not(:first-child) {
+            padding-left: 8px;
+        }
+    }
+
+    &__logo_header {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px auto;
+    width: $desktop-content-width;
+
+    &__phone {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    &__button {
+        @extend .roboto-bold;
+        padding: 15px 26px;
+        background: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 20px 4px rgba(0,0,0,0.05);
+        font-size: 13px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-left: 6px;
+        }
+
+        &:hover {
+            background: $light-blue;
+        }
+
+    }
+}
+
+.logo {
+
+    &_header {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        margin: 0 18px 10px 0;
+    }
+    &__text {
+        &_accent {
+            @extend .agopus-bold;
+            font-size: 26px;
+            color: $accent-color;
+        }
+        &_small {
+            @extend .roboto-regular;
+            font-size: 13px;
+            color: $gray;
+        }
+    }
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__title {
+        @extend .roboto-medium;
+        font-size: 12px;
+        color: $blue-gray;
+        text-transform: uppercase;
+    }
+    &__link {
+        @extend .roboto-medium;
+        font-size: 22px;
+        color: $primary-gray;
+        text-decoration: none;
+    }
+}
+
+.header-menu {
+    margin: 0 auto;
+    width: $desktop-content-width;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    &__link {
+        @extend .roboto-medium;
+        font-size: 16px;
+        color: $primary-gray;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__arrow-icon {
+        margin-left: 15px;
+    }
+}

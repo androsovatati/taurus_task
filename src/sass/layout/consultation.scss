@@ -1,0 +1,80 @@
+.consultation {
+    background: $consultation-bg;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 55px 0;
+        width: $desktop-content-width;
+    }
+
+    &__title {
+        @extend .roboto-medium;
+        max-width: 280px;
+        font-size: 24px;
+        color: $accent-color;
+        line-height: 32px;
+    }
+
+    &__subscription {
+        max-width: 580px;
+
+        &-text {
+            @extend .roboto-light;
+            margin-bottom: 34px;
+            font-size: 16px;
+            color: $light-gray;
+            line-height: 24px;
+        }
+
+        &-agree {
+            display: flex;
+            @extend .roboto-light;
+            font-size: 12px;
+            color: $extra-light-gray;
+            line-height: 16px;
+
+            a {
+                color: $extra-light-gray;  
+
+                &:hover {
+                    text-decoration: none;          
+                }
+            }
+
+            & input[type="checkbox"] {
+                margin: 0 15px 0 0;
+            }
+        }
+    }
+
+    &__form {
+        width: 280px;
+    }
+
+    &__input {
+        @extend .roboto-regular;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 22px;
+        padding: 0 15px;
+        border: 1px solid $extra-light-gray;
+    }
+    &__button {
+        @extend .roboto-bold;
+        width: 100%;
+        background: white;
+        color: $primary-color;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1);
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 55px;
+        cursor: pointer;
+    }
+}

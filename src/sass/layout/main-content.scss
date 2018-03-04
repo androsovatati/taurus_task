@@ -1,0 +1,89 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop-content-width;
+    margin: 0 auto;
+
+    &__left-column {
+        width: 280px;
+        padding-right: 20px;
+    }
+
+    &__right-column {
+        flex-grow: 1;
+        padding-left: 20px;        
+    }
+
+    .left-menu {
+        width: 100%;
+        border: 1px solid $light-blue-border;
+        border-radius: 2px;
+
+        &__current-section {
+            display: flex;
+            justify-content: space-between;
+            @extend .roboto-medium;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 0 20px;
+            color: $accent-color;
+            line-height: 48px;
+            cursor: pointer;
+        }
+
+        &__item {
+            text-transform: uppercase;
+            padding: 14px 20px;
+            background: $left-menu-bg;
+            border-top: 1px solid $light-blue-border;
+        
+            &:hover a {
+                color: $primary-color;
+            }
+        }
+        
+        &__link {
+            color: $accent-color;
+            text-decoration: none;
+            @extend .roboto-medium;
+            font-size: 13px;
+            color: $left-menu-font;
+        }
+    }
+
+    .content {
+        &__title {
+            @extend .roboto-bold;
+            font-size: 62px;
+            color: $accent-color;
+            line-height: 72px;
+        }
+
+        &__map {
+            width: 100%;
+            height: 460px;
+            margin: 50px 0;
+        }
+
+        &__address-title, &__schedule-title, &__transport-title {
+            @extend .roboto-medium;
+            font-size: 14px;
+            line-height: 22px;
+            color: $light-blue-gray;
+            text-transform: uppercase;            
+        }
+
+        &__address-text, &__schedule-text, &__transport-text {
+            @extend .roboto-medium;
+            font-size: 16px;
+            line-height: 26px;
+            color: $dark-gray;
+            margin-bottom: 40px;
+        }
+
+        &__transport-text {
+            margin-bottom: 70px;
+        }
+    }
+
+}
