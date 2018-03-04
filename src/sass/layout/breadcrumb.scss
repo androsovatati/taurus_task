@@ -1,7 +1,7 @@
 .breadcrumb {
     &__list {
         display: flex;
-        margin: 25px auto;
+        margin: 18px auto 0;
         width: $desktop-content-width;
     }
     &__item:not(:first-child) {

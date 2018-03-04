@@ -3,15 +3,16 @@
     justify-content: space-between;
     max-width: $desktop-content-width;
     margin: 0 auto;
+    padding-top: 74px;
 
     &__left-column {
-        width: 280px;
+        width: 260px;
         padding-right: 20px;
     }
 
     &__right-column {
         flex-grow: 1;
-        padding-left: 20px;        
+        padding-left: 15px;        
     }
 
     .left-menu {
@@ -28,6 +29,7 @@
             padding: 0 20px;
             color: $accent-color;
             line-height: 48px;
+            letter-spacing: 1px;
             cursor: pointer;
         }
 
@@ -48,6 +50,7 @@
             @extend .roboto-medium;
             font-size: 13px;
             color: $left-menu-font;
+            letter-spacing: 0.4px;
         }
     }
 
@@ -61,8 +64,8 @@
 
         &__map {
             width: 100%;
-            height: 460px;
-            margin: 50px 0;
+            height: 515px;
+            margin: 50px 0 42px;
         }
 
         &__address-title, &__schedule-title, &__transport-title {
@@ -76,9 +79,9 @@
         &__address-text, &__schedule-text, &__transport-text {
             @extend .roboto-medium;
             font-size: 16px;
-            line-height: 26px;
+            line-height: 25px;
             color: $dark-gray;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         &__transport-text {

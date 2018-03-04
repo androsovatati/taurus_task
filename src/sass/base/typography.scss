@@ -2,4 +2,12 @@
 @include font-face(roboto-regular, Roboto-Regular, 400);
 @include font-face(roboto-medium, Roboto-Medium, 600);
 @include font-face(roboto-bold, Roboto-Bold, 700);
-@include font-face(agopus-bold, AGOpus, 800);
+
+@font-face {
+    font-family: 'AGOpus_Bold';
+    src: url('../fonts/AGOpus_Bold.woff');
+}
+.agopus-bold {
+    font-family: 'AGOpus_Bold';
+    font-weight: 800;
+}

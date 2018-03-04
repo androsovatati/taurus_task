@@ -17,7 +17,7 @@
 
     &__accessibility {
         margin-left: auto;
-        margin-right: 130px;
+        margin-right: 127px;
     }
 
 }
@@ -61,8 +61,8 @@
     }
 
     &__logo_header {
-        width: 30px;
-        height: 30px;
+        width: 29px;
+        height: 29px;
     }
 }
 
@@ -75,7 +75,7 @@
 
     &__phone {
         margin-left: auto;
-        margin-right: 50px;
+        margin-right: 45px;
     }
 
     &__button {
@@ -108,7 +108,7 @@
         align-items: center;
     }
     &__img {
-        margin: 0 18px 10px 0;
+        margin: 0 17px 10px 0;
     }
     &__text {
         &_accent {
@@ -120,6 +120,7 @@
             @extend .roboto-regular;
             font-size: 13px;
             color: $gray;
+            letter-spacing: 0.4px;
         }
     }
 }
@@ -139,6 +140,7 @@
         @extend .roboto-medium;
         font-size: 22px;
         color: $primary-gray;
+        letter-spacing: 0.4px;
         text-decoration: none;
     }
 }

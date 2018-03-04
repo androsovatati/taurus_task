@@ -8,7 +8,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding-top: 65px;
+        padding-top: 48px;
         width: $desktop-content-width;
     }
 
@@ -24,7 +24,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 220px;
+        width: 233px;
     }
 
     &__copyright {
@@ -38,7 +38,20 @@
     }
 
     & .phone {
-        margin-bottom: 15px;
+        margin-bottom: 37px;
+
+        &__number {
+            margin-bottom: 12px;
+        }
+
+        &__title {
+            letter-spacing: 1px;
+        }
+
+        &__link {
+            letter-spacing: 1px;
+            font-size: 24px;
+        }
     }
 
     & .address {
@@ -47,7 +60,8 @@
         font-size: 16px;
         color: $footer-menu-font;
         line-height: 22px;
-        padding: 25px 0;
+        padding: 26px 0 30px;
+        letter-spacing: .5px;
     }
 
     & .schedule {
@@ -55,8 +69,8 @@
         width: 100%;
         font-size: 14px;
         color: $footer-menu-font;
-        line-height: 28px;
-        padding-bottom: 30px;
+        line-height: 20px;
+        padding-bottom: 15px;
         
         & ._underline {
             text-decoration: underline;
@@ -67,10 +81,10 @@
             align-items: center;
             @extend .roboto-medium;
             font-size: 18px;
-            padding: 20px 0;
+            padding: 10px 0;
 
             & img {
-                padding: 10px; 
+                padding-right: 10px; 
             }
         }
 
@@ -78,19 +92,28 @@
 
     & .social {
         width: 100%;
+
+        &__logo_footer {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__item:not(:first-child) {
+            padding-left: 10px;
+        }
     }
 }
 
 .logo {
-    margin-right: 100px;
+    padding-top: 8px;
+    margin-right: 35px;
     
     &_footer {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     &__img {
-        margin: 0 18px 10px 0;
+        margin: 0 18px 13px 0;
     }
     &__text {
         &_accent {
@@ -119,7 +142,7 @@
     }
 
     &__section {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
 
         & a {
             @extend .roboto-bold;
@@ -149,8 +172,8 @@
     }
 
     &_one-column {
-        margin-top: 35px;
-        margin-bottom: 25px;
+        margin-top: 30px;
+        margin-bottom: 17px;
 
         & .footer-menu__list-columns {
             display: flex;
