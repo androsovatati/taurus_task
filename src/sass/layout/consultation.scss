@@ -67,7 +67,7 @@
     }
     &__button {
         @extend .roboto-bold;
-        width: 100%;
+        padding: 19px 37px;
         background: white;
         color: $primary-color;
         border: none;
@@ -75,8 +75,15 @@
         box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1);
         font-size: 14px;
         text-transform: uppercase;
-        line-height: 55px;
+        line-height: 1.2;
+        outline: none;
         cursor: pointer;
+
+        &:hover {
+            background: $primary-color;
+            color: white;
+            box-shadow: none;
+        }
     }
 }
 
@@ -107,7 +114,7 @@
         }
     }
 }
-@media (max-width: 338px) {
+@media (max-width: 650px) {
     .consultation {
         &__title {
             max-width: 100%; 
@@ -130,5 +137,12 @@
         &__container {
             padding-bottom: 43px;
         }
+    }
+}
+
+@media (min-width: 786px) and (max-width: 1200px){ 
+    .consultation__container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

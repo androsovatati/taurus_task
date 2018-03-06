@@ -228,7 +228,12 @@
 
 }
 
-@media (max-width: 338px) {
+@media (max-width: 420px) {
+    .header-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .header-info__phone, .top-toolbar__university-link {
         display: none;
     }
@@ -242,7 +247,7 @@
         padding: 7px 7px 7px 15px;
     }
     .header-info {
-        padding: 0 15px;
+        padding: 0 0 0 15px;
     }
     .logo.logo__header {
         margin-right: 0;
@@ -254,5 +259,31 @@
         padding: 13px 8px;
         margin-top: 5px;
     }
-    
+    .logo.logo_header {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 421px)  and (max-width: 765px){ 
+    .header-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header-info__phone {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 786px) and (max-width: 1020px){ 
+    .header-info {
+        flex-wrap: wrap;
+    }
+    .top-toolbar, .header-info, .header-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-info__phone {
+        order: 1;
+    }
 }

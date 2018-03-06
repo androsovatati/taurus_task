@@ -32,3 +32,10 @@
         margin: 19px 13px;
     }
 }
+
+@media (min-width: 786px) and (max-width: 1020px){ 
+    .breadcrumb__list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
