@@ -107,3 +107,28 @@
         }
     }
 }
+@media (max-width: 338px) {
+    .consultation {
+        &__title {
+            max-width: 100%; 
+            text-align: center;
+            margin-top: -27px;
+        }
+        &__subscription {
+            padding: 0 15px;
+        }
+        &__subscription-text {
+            margin-bottom: 10px;
+        }
+        &__subscription-agree {
+            font-size: 12px;
+            text-align: start;
+        }
+        ._hide-text {
+            display: none;
+        }
+        &__container {
+            padding-bottom: 43px;
+        }
+    }
+}

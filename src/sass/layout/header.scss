@@ -20,6 +20,13 @@
         margin-right: 127px;
     }
 
+    &__menu {
+        display: none;
+    }
+    &__phone {
+        display: none;
+    }
+
 }
 
 .university-link {
@@ -196,6 +203,10 @@
                 display: none;
             }
         }
+
+        &__menu {
+            display: block;
+        }
     }
 
     .header-info {
@@ -215,4 +226,33 @@
     }
 
 
+}
+
+@media (max-width: 338px) {
+    .header-info__phone, .top-toolbar__university-link {
+        display: none;
+    }
+    .top-toolbar__phone {
+        display: block;
+    }
+    .accessibility__item_search {
+        padding-left: 0px;
+    }
+    .top-toolbar {
+        padding: 7px 7px 7px 15px;
+    }
+    .header-info {
+        padding: 0 15px;
+    }
+    .logo.logo__header {
+        margin-right: 0;
+    }
+    .logo__text_accent {
+        margin-top: -9px;
+    }
+    .header-info__button {
+        padding: 13px 8px;
+        margin-top: 5px;
+    }
+    
 }

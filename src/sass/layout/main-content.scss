@@ -115,3 +115,33 @@
         }
     }
 }
+
+@media (max-width: 338px) {
+    .main-content {
+        padding-top: 0px;
+        &__right-column {
+            padding: 0;
+        }
+        .content {
+            &__title {
+                line-height: 32px;
+                font-size: 26px;
+                padding-left: 11px;
+            }
+            &__map {
+                height: 241px;
+                margin: 13px 0 16px;
+            }
+            &__address, &__schedule, &__transport {
+                padding-left: 14px;
+                font-size: 14px;
+            }
+            &__transport-text {
+                margin-bottom: 22px;
+            }
+            &__address-text, &__schedule-text, &__transport-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
