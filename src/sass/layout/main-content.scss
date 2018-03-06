@@ -90,3 +90,28 @@
     }
 
 }
+
+@media (max-width: 785px) {
+    .main-content {
+        padding-top: 20px;
+        &__left-column {
+            display: none;
+        }
+        &__right-column {
+            -webkit-box-flex: 1;
+            padding: 0 18px;
+        }
+        .content {
+            &__title {
+                font-size: 36px;
+            }
+            &__map {
+                height: 427px;
+                margin: 13px 0 30px;
+            }
+            &__transport-text {
+                margin-bottom: 22px;
+            }
+        }
+    }
+}

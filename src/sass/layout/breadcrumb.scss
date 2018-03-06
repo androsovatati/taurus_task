@@ -2,7 +2,7 @@
     &__list {
         display: flex;
         margin: 18px auto 0;
-        width: $desktop-content-width;
+        max-width: $desktop-content-width;
     }
     &__item:not(:first-child) {
         margin-left: 7px;
@@ -19,5 +19,11 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+@media (max-width: 785px) {
+    .breadcrumb__list {
+        margin: 14px 20px;
     }
 }

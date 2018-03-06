@@ -13,7 +13,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 6px 0;
-    width: $desktop-content-width;
+    max-width: $desktop-content-width;
 
     &__accessibility {
         margin-left: auto;
@@ -70,8 +70,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 22px auto;
-    width: $desktop-content-width;
+    margin: 10px auto 22px;
+    max-width: $desktop-content-width;
 
     &__phone {
         margin-left: auto;
@@ -147,7 +147,7 @@
 
 .header-menu {
     margin: 0 auto;
-    width: $desktop-content-width;
+    max-width: $desktop-content-width;
 
     &__list {
         display: flex;
@@ -167,4 +167,52 @@
     &__arrow-icon {
         margin-left: 15px;
     }
+}
+
+@media (max-width: 785px) {
+
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .top-toolbar {
+        padding: 7px 12px 7px 20px;
+
+        &__university-link {
+            margin-right: auto;
+            margin-left: 22px;
+        }
+
+        &__social {
+            display: none;
+        }
+        &__accessibility {
+            margin: 0;
+        }
+        .accessibility {
+            &__item_map, &__item_blind {
+                display: none;
+            }
+        }
+    }
+
+    .header-info {
+        flex-wrap: wrap;
+        padding: 0px 20px;    
+        margin: 10px auto 0px;    
+
+        &__phone {
+            order: 1;
+            margin-top: -20px;
+            margin-left: auto;
+            margin-right: 0;    
+        }
+        .phone__title {
+            display: none;
+        } 
+    }
+
+
 }

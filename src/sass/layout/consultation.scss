@@ -7,7 +7,7 @@
         align-items: center;
         margin: 0 auto;
         padding: 55px 0;
-        width: $desktop-content-width;
+        max-width: $desktop-content-width;
     }
 
     &__title {
@@ -77,5 +77,33 @@
         text-transform: uppercase;
         line-height: 55px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 785px) {
+    .consultation {
+        &__title {
+            max-width: 100%; 
+        }
+        &__subscription {
+            max-width: 660px;
+            text-align: center;
+            margin-top: 23px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__subscription-agree {
+            max-width: 600px;
+            margin: 0 auto;
+            justify-content: center;
+            font-size: 13px;
+            text-align: center;
+        }
+        &__input {
+            display: none;
+        }
     }
 }

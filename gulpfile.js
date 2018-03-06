@@ -16,7 +16,7 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./build'));
 });
 
-gulp.task('sass', ['html'] ,function () {
+gulp.task('sass', ['html'], function () {
     return gulp.src('./src/sass/main.scss')
         .pipe(sass().on('error', notify.onError({title: 'sass'})))
         .pipe(uncss({html: ['./build/index.html']}))
